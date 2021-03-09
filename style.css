@@ -1,0 +1,59 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100%;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+}
+
+.sub-container .tooltip {
+  padding: 1rem;
+  background-color: bisque;
+  border: 2px dashed black;
+  border-radius: 0.5rem;
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 6rem;
+  height: 70px;
+  position: fixed;
+}
+
+.sub-container .tooltip::after {
+  content: "";
+  border: 2px dashed black;
+  background-color: bisque;
+  border-bottom: none;
+  border-right: none;
+  width: 1.6rem;
+  height: 1.6rem;
+  position: absolute;
+  top: -0.8rem;
+  left: calc(50% - 0.8rem);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.sub-container .show {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+/*# sourceMappingURL=style.css.map */
